@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+source ./.env
+docker compose up --remove-orphans --pull=always -d
+echo "App running at: http://localhost:${CLIENT_PORT}"
